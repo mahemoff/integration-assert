@@ -10,7 +10,7 @@ class UserFlowsTest < ActionDispatch::IntegrationTest
     get '/example/go'
     assert_response :success
     assert 'ohai', response.body
-    assert_equal 'ohai', assigns[:messsage]
+    assert_equal 'ohai', assigns(:messsage)
   end
 
 end
